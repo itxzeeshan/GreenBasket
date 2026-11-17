@@ -15,6 +15,8 @@ The repo is split into two top-level folders, one per process — each with its 
 
 ### API
 
+Health check: http://localhost:5000/health
+
 ```bash
 cd server && npm install && npm run dev
 ```
