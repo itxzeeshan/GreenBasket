@@ -11,7 +11,13 @@ The repo is split into two top-level folders, one per process — each with its 
 
 ## Run locally
 
-(Completed in Chapter 2 — fill in after sub-chapter 2.16)
+Terminal 1 — API (port 5000):
+cd server && npm install && npm run dev
+
+Terminal 2 — Client (port 5173):
+cd client && npm install && npm run dev
+
+Open http://localhost:5173 — Home page should show API status ok.
 
 ### API
 
