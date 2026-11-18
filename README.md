@@ -16,6 +16,7 @@ The repo is split into two top-level folders, one per process — each with its 
 ### API
 
 Health check: http://localhost:5000/health
+git commit -m "feat(client): add api client helper and env example"
 
 ```bash
 cd server && npm install && npm run dev
