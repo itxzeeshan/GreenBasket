@@ -24,6 +24,12 @@ Open http://localhost:5173 — Home page should show API status ok.
 Health check: http://localhost:5000/health
 cp client/.env.example client/.env
 
+Requirements:
+
+- MongoDB running (or Atlas reachable)
+- `server/.env` with a valid `MONGODB_URI` (copy it from `server/.env.example`)
+- The server will not start if the database connection fails
+
 ```bash
 cd server && npm install && npm run dev
 ```
