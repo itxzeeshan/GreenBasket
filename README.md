@@ -32,6 +32,20 @@ cd server && npm install && npm run dev
 cd client && npm install && npm run dev
 ```
 
+## Environment setup
+
+### Server
+
+cp server/.env.example server/.env
+
+# Edit server/.env — set MONGODB_URI to your local or Atlas connection string
+
+### Client
+
+cp client/.env.example client/.env
+
+# Default VITE_API_URL=http://localhost:5000
+
 ## Author
 
 Zeeshan Razzaq — course project
