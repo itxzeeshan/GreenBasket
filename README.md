@@ -30,6 +30,9 @@ Requirements:
 - `server/.env` with a valid `MONGODB_URI` (copy it from `server/.env.example`)
 - The server will not start if the database connection fails
 
+Health check: GET http://localhost:5000/health
+Response includes `db: connected` when MongoDB is reachable.
+
 ```bash
 cd server && npm install && npm run dev
 ```
