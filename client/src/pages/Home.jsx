@@ -27,16 +27,21 @@ const Home = () => {
 
   return (
     <main>
-      <h1>GreenBasket</h1>
+      <h1>GreenBasket — System status</h1>
       <p>Local grocery marketplace</p>
 
-      <p id="api-status">
-        {loading && "Connecting to API…"}
-        {!loading && error && `API error: ${error}`}
-        {!loading && health && `API status: ${health.status}`}
-      </p>
+      <div id="api-status">
+        {loading && <p>Connecting to API…</p>}
 
-      {health && <pre>{JSON.stringify(health, null, 2)}</pre>}
+        {!loading && error && <p>API error: {error}</p>}
+
+        {!loading && health && (
+          <>
+            <p>API: {health.status ?? "unknown"}</p>
+            <p>Database: {health.db ?? "unknown"}</p>
+          </>
+        )}
+      </div>
     </main>
   );
 };
