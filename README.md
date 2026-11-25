@@ -33,6 +33,13 @@ Requirements:
 Health check: GET http://localhost:5000/health
 Response includes `db: connected` when MongoDB is reachable.
 
+### Seed database
+
+npm run seed # from server/
+
+Creates test vendors, stores, and products. See docs/erd.md for entity list.
+Test credentials: vendor-a@test.local / Password123! (if documented)
+
 ```bash
 cd server && npm install && npm run dev
 ```
